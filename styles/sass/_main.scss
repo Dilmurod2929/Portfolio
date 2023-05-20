@@ -1,0 +1,76 @@
+section#main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $bg-color;
+
+  .content {
+    max-width: 800px;
+  }
+
+  .content h2 {
+    color: $text-color;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .content h2 span {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .animeted-text {
+    height: 70px;
+    overflow: hidden;
+  }
+  .animeted-text h3 {
+    color: $primary-color;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+  }
+  .animeted-text h3:nth-child(1) {
+    animation: text-move 10s infinite;
+  }
+  .btn {
+    color: $text-color;
+    background-color: $primary-color;
+    font-style: 17px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 30px 0;
+    transition: 0.5s ease;
+    &:hover {
+      background: $text-color;
+      color: $bg-color;
+    }
+  }
+  .media-icons a {
+    color: $text-color;
+    font-size: 25px;
+    margin-right: 30px;
+  }
+}
+
+@keyframes text-move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -70px;
+  }
+  50% {
+    margin-top: -140px;
+  }
+  75% {
+    margin-top: -70px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}

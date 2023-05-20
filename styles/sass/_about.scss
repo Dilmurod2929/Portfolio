@@ -1,0 +1,41 @@
+section#about {
+  padding: 50px 100px;
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .col-left {
+    position: relative;
+    width: 45%;
+  }
+  .col-right {
+    position: relative;
+    width: 45%;
+  }
+  .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+  }
+  .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .content-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .education {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

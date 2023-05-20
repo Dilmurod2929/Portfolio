@@ -1,0 +1,98 @@
+section#contact {
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .card {
+    text-align: center;
+    background: $text-color;
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  .contact-icon {
+    color: $primary-color;
+    font-size: 60px;
+    text-align: center;
+  }
+  h3 {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+  }
+  span {
+    color: #666;
+    font-weight: 500;
+  }
+  .contact-form {
+    background: #fff;
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  }
+  .contact-form h3 {
+    color: #111;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  input,
+  textarea {
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 5px;
+    resize: none;
+  }
+  .send-btn {
+    color: $text-color;
+    background: $primary-color;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-color: inherit;
+    letter-spacing: 2px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:hover {
+      background: $text-color;
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
