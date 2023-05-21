@@ -332,8 +332,16 @@ section#skills .css::before {
   width: 85%;
   background-color: #0c73b8;
 }
+section#skills .bootstrap::before {
+  width: 75%;
+  background-color: #563d7c;
+}
+section#skills .tailwind::before {
+  width: 68%;
+  background-color: #3490dc;
+}
 section#skills .type::before {
-  width: 45%;
+  width: 50%;
   background-color: #007acc;
 }
 section#skills .java::before {
@@ -343,6 +351,10 @@ section#skills .java::before {
 section#skills .react::before {
   width: 75%;
   background-color: #61dbfb;
+}
+section#skills .redux::before {
+  width: 60%;
+  background-color: #764abc;
 }
 
 section#services .content {

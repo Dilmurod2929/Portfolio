@@ -56,8 +56,16 @@ section#skills {
     width: 85%;
     background-color: #0c73b8;
   }
+  .bootstrap::before {
+    width: 75%;
+    background-color: #563d7c;
+  }
+  .tailwind::before {
+    width: 68%;
+    background-color: #3490dc;
+  }
   .type::before {
-    width: 45%;
+    width: 50%;
     background-color: #007acc;
   }
   .java::before {
@@ -67,5 +75,9 @@ section#skills {
   .react::before {
     width: 75%;
     background-color: #61dbfb;
+  }
+  .redux::before {
+    width: 60%;
+    background-color: #764abc;
   }
 }
