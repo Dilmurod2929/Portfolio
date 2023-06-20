@@ -5,6 +5,18 @@ window.addEventListener("DOMContentLoaded", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
   });
 
+  const year = document.querySelector("#year");
+
+  let now = new Date();
+
+  year.innerHTML = dateBuilder(now);
+
+  function dateBuilder(s) {
+    let year = s.getFullYear();
+
+    return `${year}`;
+  }
+
   const menuBtn = document.querySelector(".menu-btn");
   const navigation = document.querySelector(".navigation");
   const navigationItems = document.querySelectorAll(".navigation a");
